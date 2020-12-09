@@ -1,0 +1,70 @@
+@import '~antd/dist/antd.css';
+
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.first_flex {
+  order: 1;
+  color: red;
+
+}
+h2 {
+  color: red;
+}
+
+.Description {
+  order: 2;
+  color: red;
+  font-size: 0.5cm;
+  
+}
+
+.info {
+  order: 3;
+  position: relative;
+  left: 280px;
+  top: 5px; 
+}
+
+.PDF {
+  order: 4;
+  position: relative;
+  top: 10px; 
+}
+
+
+body {
+  margin: 0;
+  font-family: "Roboto";
+
+}
+
+.background{
+  height: 100vh;
+  width: 100%;
+  top: 0%;
+  background-color: white
+}
+
+.suggestions_board {
+  
+  width: 320px;
+  height: 700px;
+  text-align: center;
+  background-color:white;
+  border: solid red;
+  order: 4;
+}
+
+.MovementNames_first {
+  color: red;
+  text-align: left;
+}
+
+
+
+

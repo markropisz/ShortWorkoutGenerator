@@ -1,0 +1,42 @@
+[
+  {
+    "model": "WorkoutGeneratorApp.Movement",
+    "pk": 1,
+    "fields": {
+      "movement_name" : "Push:",
+      "first_variation": "Bench press",
+      "second_variation": "Push up",
+      "third_variation": "Dumbbell press"
+    }
+  },
+  {
+    "model": "WorkoutGeneratorApp.Movement",
+    "pk": 2,
+    "fields": {
+      "movement_name": "Pull:",
+      "first_variation": "Pull up",
+      "second_variation": "Cable row",
+      "third_variation": "Dumbbell row"
+    }
+  },
+  {
+    "model": "WorkoutGeneratorApp.Movement",
+    "pk": 3,
+    "fields": {
+      "movement_name" : "Squat:",
+      "first_variation": "Back squat",
+      "second_variation": "Front squat",
+      "third_variation": "Zercher squat"
+    }
+  },
+    {
+    "model": "WorkoutGeneratorApp.Movement",
+    "pk": 4,
+    "fields": {
+      "movement_name" : "Deadlift:",
+      "first_variation": "Classical deadlift",
+      "second_variation": "Stiff-leg deadlift",
+      "third_variation": "Trap-bar deadlift"
+    }
+  }
+]

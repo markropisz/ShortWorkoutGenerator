@@ -1,0 +1,12 @@
+.sidenav {
+    height: 100%;
+    width: 160px;
+    position: fixed;
+    background-color: #111;
+}
+.body {
+  background-color: lightblue;
+}
+h2 {
+  color: red;
+}
