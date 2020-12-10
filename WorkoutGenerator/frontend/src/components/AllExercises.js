@@ -36,6 +36,19 @@ class AllExercises extends React.Component {
                 }
             )
     }
+            
+    editing_chosen_movements (lower_margin, upper_margin, button_color_index){
+        this.setState(({movement_buttons_colors}) => {
+            const buttons = [...this.state.movement_buttons_colors];
+
+            for (let i = lower_margin; i < upper_margin; i++){
+                buttons[i] = null;
+            }
+
+            buttons[button_color_index] = this.state.color;
+            return ({movement_buttons_colors: buttons})
+        })
+    }
 
     handleClick = (chosen_exercise, button_color_index) => {
         console.log("Element: " + button_color_index);
@@ -47,57 +60,24 @@ class AllExercises extends React.Component {
                 return ({movement_buttons_colors: buttons})
             })
         } else if (button_color_index < 3){
-            console.log("Drugi if")
+            console.log("Drugi if");
 
-            this.setState(({movement_buttons_colors}) => {
-                const buttons = [...this.state.movement_buttons_colors];
+            this.editing_chosen_movements(0, 3, button_color_index);
 
-                for (let i = 0; i < 3; i++){
-                    buttons[i] = null;
-                }
-
-                buttons[button_color_index] = this.state.color;
-                return ({movement_buttons_colors: buttons})
-            })
         } else if ((button_color_index >= 3 && button_color_index < 6)){
-            console.log("Trzeci if")
+            console.log("Trzeci if");
 
-            this.setState(({movement_buttons_colors}) => {
-                const buttons = [...this.state.movement_buttons_colors];
+            this.editing_chosen_movements(3, 6, button_color_index);
 
-                for (let i = 3; i < 6; i++){
-                    buttons[i] = null;
-                }
-
-                buttons[button_color_index] = this.state.color;
-                return ({movement_buttons_colors: buttons})
-            })
         }  else if ((button_color_index >= 6 && button_color_index < 9)){
-            console.log("Czwarty if")
+            console.log("Czwarty if");
 
-            this.setState(({movement_buttons_colors}) => {
-                const buttons = [...this.state.movement_buttons_colors];
+            this.editing_chosen_movements(6, 9, button_color_index);
 
-                for (let i = 6; i < 9; i++){
-                    buttons[i] = null;
-                }
-
-                buttons[button_color_index] = this.state.color;
-                return ({movement_buttons_colors: buttons})
-            })
         }  else if ((button_color_index >= 9 && button_color_index < 12)){
-            console.log("Piaty if")
+            console.log("Piaty if");
 
-            this.setState(({movement_buttons_colors}) => {
-                const buttons = [...this.state.movement_buttons_colors];
-
-                for (let i = 9; i < 12; i++){
-                    buttons[i] = null;
-                }
-
-                buttons[button_color_index] = this.state.color;
-                return ({movement_buttons_colors: buttons})
-            })
+            this.editing_chosen_movements(9, 12, button_color_index);
         }
     }
 
@@ -137,6 +117,7 @@ class AllExercises extends React.Component {
                     </div>
                     <div className="PDF">
                         <PdfButton
+
                         />
                     </div>
                 </div>
