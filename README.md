@@ -7,4 +7,4 @@ A short app for creating a plan for next gym session
 
 ===========================================
 
-4. enter "frontend" directory in your terminal and run "npm start"
+4. enter "WorkoutGenerator/frontend" directory in your terminal and run "npm start"
