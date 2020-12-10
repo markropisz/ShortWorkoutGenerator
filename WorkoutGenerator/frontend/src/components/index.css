@@ -53,7 +53,7 @@ body {
 .suggestions_board {
   
   width: 320px;
-  height: 700px;
+  height: 70%;
   text-align: center;
   background-color:white;
   border: solid red;
